@@ -29,16 +29,9 @@ Android Lint to GitHub.
 <summary><b>build.gradle (Groovy)</b></summary>
 
 ```groovy
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.btkelly:gnag:{current version}'
-    }
+plugins {
+  id "com.btkelly.gnag" version "{current version}"
 }
-
-apply plugin: 'gnag'
 
 gnag {
     github {
@@ -55,17 +48,8 @@ gnag {
 <summary><b>build.gradle.kts (Kotlin)</b></summary>
 
 ```kotlin
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath("com.btkelly:gnag:{current version}")
-    }
-}
-
 plugins {
-    id("gnag")
+  id("com.btkelly.gnag") version "{current version}"
 }
 
 gnag {
@@ -270,7 +254,7 @@ To enforce the same quality checks across multiple Gradle modules, apply and con
 buildscript {
     repositories {
         // ...
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
@@ -300,7 +284,7 @@ subprojects {
 buildscript {
     repositories {
         // ...
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {

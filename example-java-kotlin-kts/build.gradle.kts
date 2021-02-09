@@ -8,7 +8,6 @@ plugins {
 repositories {
     mavenLocal()
     mavenCentral()
-    jcenter()
 }
 
 group = "com.btkelly.gnag"
