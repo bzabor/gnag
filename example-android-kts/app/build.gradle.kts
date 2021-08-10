@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    id("com.github.hierynomus.license").version("0.15.0")
+    id("com.github.hierynomus.license").version("0.16.1")
     id("com.btkelly.gnag") version "2.5.0"
 }
 
