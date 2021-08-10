@@ -60,5 +60,5 @@ task createClasspathManifest {
 }
 
 dependencies {
-    testRuntime files(createClasspathManifest)
+    testRuntimeOnly files(createClasspathManifest)
 }
